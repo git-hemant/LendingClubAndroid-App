@@ -1,0 +1,14 @@
+<resources>
+    <string name="pref_header_general">General</string>
+    <string name="api_key_title">API Key</string>
+    <string name="investor_key_title">Lending Club Investor ID</string>
+    <string name="lc_testMode_title">Test mode</string>
+    <string name="lc_testMode_description">Turn on to not send actual orders to LendingClub.</string>
+    <string name="pref_header_about">About</string>
+    <string name="validate_settings">Validate settings</string>
+    <string name="validate_summary">Touch here to validate your LendingClub Investor ID and API Key. This data is sent only to LendingCLub to authenticate you, and is never shared or stored outside the device.</string>
+    <string name="version_title">Version</string>
+    <string name="feedback">Send feedback</string>
+    <string name="Disclaimer">Disclaimer</string>
+    <string name="privacy_policy">Privacy policy</string>
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100sp"
+    android:columnCount="3"
+    android:orientation="vertical"
+    android:padding="15px"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:rowCount="1">
+
+    <TextView
+        android:id="@+id/subGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:text="Small Text"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Display2" />
+
+    <GridLayout
+        android:id="@+id/gl1"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:layout_toRightOf="@id/subGrade"
+        android:columnCount="1"
+        android:paddingLeft="10dp"
+        android:rowCount="3">
+
+        <TextView
+            android:id="@+id/noteId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_toRightOf="@id/subGrade"
+            android:paddingLeft="5dp"
+            android:text="Small Text"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_column="0"
+            android:layout_row="1">
+
+            <TextView
+                android:id="@+id/lblNoteAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:paddingLeft="3dp"
+                android:text="Invested:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption" />
+
+            <TextView
+                android:id="@+id/preNoteAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:paddingLeft="1dp"
+                android:text="$"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+            <TextView
+                android:id="@+id/noteAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:paddingLeft="0dp"
+                android:text="Small Text"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_column="0"
+            android:layout_row="2">
+
+        <TextView
+            android:id="@+id/lblPaymentReceived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:paddingLeft="3dp"
+            android:text="Received:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption" />
+
+        <TextView
+            android:id="@+id/prePaymentReceived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:paddingLeft="1dp"
+            android:text="$"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/paymentReceived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noteAmount"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:paddingLeft="0dp"
+            android:text="Small Text"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+        </LinearLayout>
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/gl2"
+        android:layout_column="2"
+        android:layout_row="0"
+        android:layout_gravity="right"
+        android:layout_toRightOf="@id/subGrade"
+        android:columnCount="1"
+        android:paddingLeft="10dp"
+        android:rowCount="2">
+
+        <TextView
+            android:id="@+id/loanStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:paddingLeft="5dp"
+            android:text="Small Text"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/CREATED_DATE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/name"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/name"
+            android:layout_row="1"
+            android:gravity="end"
+            android:text="Small Text"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+    </GridLayout>
+</GridLayout>

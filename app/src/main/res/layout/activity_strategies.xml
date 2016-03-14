@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <include xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lstStrategies" />
+
+    </LinearLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        fab:fab_addButtonColorNormal="@color/accent"
+        fab:fab_addButtonColorPressed="@color/accent_dark"
+        fab:fab_addButtonPlusIconColor="@color/white"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_new_strategy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/lendingclub_theme_color_dark_blue"
+            fab:fab_title="New Strategy"
+            fab:fab_colorPressed="@color/lendingclub_theme_color_dark_blue"
+            fab:fab_icon="@drawable/ic_content_create"
+        />
+
+        <!--<com.getbase.floatingactionbutton.FloatingActionButton-->
+            <!--android:id="@+id/action_b"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--fab:fab_colorNormal="@color/white"-->
+            <!--fab:fab_title="New Filter"-->
+            <!--fab:fab_colorPressed="@color/white_pressed"/>-->
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

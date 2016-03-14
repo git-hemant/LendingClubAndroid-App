@@ -1,0 +1,14 @@
+{
+	"term" : {
+		"include" : [
+			"36"
+		]
+	},
+	"annualInc" : {
+		"greaterThan" : 33000,
+		"lessThan" : 55000
+	},
+	"dti" : {
+		"lessThan" : 100
+	}
+}

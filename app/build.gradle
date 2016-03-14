@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+def gitVersion() {
+    def counter = 0
+    def process = "git rev-list master --first-parent --count".execute()
+    return process.text.toInteger()
+}
+
+def versionMajor = 5
+def versionMinor = 2
+def versionPatch = 2
+
+android {
+
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.ravneetg.lcautomatique"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode gitVersion()
+        versionName "${versionMajor}.${versionMinor}.${versionPatch}"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    provided fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.google.android.gms:play-services:7.5.0'
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:appcompat-v7:21.+'
+    compile 'com.android.support:cardview-v7:21.0.+'
+    compile 'com.getbase:floatingactionbutton:1.6.0'
+    compile 'com.google.code.gson:gson:2.2+'
+    compile 'com.github.hotchemi:android-rate:0.5.5'
+}

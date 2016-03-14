@@ -1,0 +1,39 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="pref_key_general_settings"
+        android:title="@string/pref_header_general">
+
+        <!--
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="lc_testMode"
+            android:summary="@string/lc_testMode_description"
+            android:title="@string/lc_testMode_title" />
+        -->
+
+        <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+        <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+        <EditTextPreference
+            android:hint="Your LendingClub Investor ID."
+            android:inputType="number"
+            android:key="investor_id"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/investor_key_title" />
+        <EditTextPreference
+            android:hint="Your LendingClub API Key."
+            android:inputType="text"
+            android:key="api_key"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/api_key_title" />
+
+        <Preference
+            android:key="btnValidate"
+            android:summary="@string/validate_summary"
+            android:title="@string/validate_settings" />
+    </PreferenceCategory>
+</PreferenceScreen>

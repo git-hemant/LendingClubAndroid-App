@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ravneetg.lcautomatique.activities.ChangesActivity">
+    
+    <item android:id="@+id/day1" android:title="@string/changes_since_yesterday"/>
+    <item android:id="@+id/day7" android:title="@string/changes_last_7_days"/>
+    <item android:id="@+id/day30" android:title="@string/changes_last_30_days"/>
+    <item android:id="@+id/day90" android:title="@string/changes_last_90_days"/>
+</menu>

@@ -1,0 +1,20 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="pref_key_general_settings"
+        android:title="@string/pref_header_about">
+
+        <Preference
+            android:key="version"
+            android:title="@string/version_title" />
+        <Preference
+            android:key="feedback"
+            android:summary="Touch here to send feedback. This will open your email application."
+            android:title="@string/feedback">
+            <intent android:action="com.ravneetg.lcautomatique.action.SendFeedback" />
+        </Preference>
+        <Preference
+            android:key="Disclaimer"
+            android:summary="@string/AppDisclaimer"
+            android:title="@string/Disclaimer" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,56 @@
+{
+	"term" : {
+		"include" : [
+			"36"
+		]
+	},
+	"addrState" : {
+		"exclude" : [
+			"CA",
+			"CT",
+			"IL",
+			"KS",
+			"ME",
+			"MN",
+			"MS",
+			"NJ",
+			"NV",
+			"NY",
+			"SC"
+		]
+	},
+	"purpose" : {
+		"include" : [
+			"debt_consolidation",
+			"home_improvement"
+		]
+	},
+	"grade" : {
+		"include" : [
+			"A"
+		]
+	},
+	"subGrade" : {
+		"exclude" : [
+			"A1",
+			"A2"
+		]
+	},
+	"annualInc" : {
+		"greaterThan" : 1
+	},
+	"homeOwnership" : {
+		"exclude" : [
+			"RENT"
+		]
+	},
+	"inqLast6Mths" : {
+		"lessThan" : 1
+	},
+	"mthsSinceRecentInq" : {
+		"greaterThan" : 1
+	},
+	"dti" : {
+		"lessThan" : 100
+	}
+}

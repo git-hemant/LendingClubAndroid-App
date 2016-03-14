@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="8px"
+        android:id="@+id/shadow_prelollipop"
+        android:background="@drawable/shadow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView2"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/llcontainer"
+            android:paddingTop="40px">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtStrategyName"
+                android:hint="@string/strategy_name_edit_text_placeholder"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+                android:background="@drawable/automatique_textfield_disabled_holo_light"
+                android:layout_marginBottom="5sp"
+                android:singleLine="true"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="@string/InvestmentAmountPerNote"
+                android:id="@+id/lblAmountPerNote"
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px"
+                android:visibility="visible"
+                android:paddingLeft="20px"
+                android:paddingRight="20px" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lstAmountPerNote"
+                android:background="@drawable/automatique_spinner_disabled_holo_light"
+                android:prompt="@string/default_portfolio"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="@string/TargetPortfolio"
+                android:id="@+id/lblTargetPortfolio"
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px"
+                android:visibility="visible"
+                android:paddingLeft="20px"
+                android:paddingRight="20px" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lstTargetPortfolio"
+                android:background="@drawable/automatique_spinner_disabled_holo_light"
+                android:prompt="@string/default_portfolio"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="@string/MaxOrdersPerDay"
+                android:id="@+id/lblMaxOrdersPerDay"
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px"
+                android:visibility="visible"
+                android:paddingLeft="20px"
+                android:paddingRight="20px" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lstMaxOrdersPerDay"
+                android:background="@drawable/automatique_spinner_disabled_holo_light"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="@string/StrategyFilters"
+                android:id="@+id/textView7"
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px"
+                android:visibility="visible"
+                android:paddingLeft="20px"
+                android:paddingRight="20px" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/linearLayoutContainer"
+                android:padding="40px">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
